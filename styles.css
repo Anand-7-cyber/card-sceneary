@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.main {
+
+    width: 20rem;
+    height: auto;
+
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s linear;
+    background-color: black;
+    box-sizing: border-box;
+   
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main:hover {
+    scale: 1.2;
+    animation-name: rotate;
+    position: relative;
+    animation-duration: 10s;
+    transition: 0.3s linear;
+}
+
+.image {
+    width: 300px;
+    border-radius: 15px;
+    height: 200px;
+    padding: 10px;
+    overflow: hidden;
+    margin-left: -1px;
+
+
+}
+
+
+.image img {
+    filter: grayscale(100%);
+    transition: 0.7s linear;
+    filter: blur(100%);
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.image img:hover {
+    filter: grayscale(0%);
+    overflow: hidden;
+    scale: 1.1;
+
+}
+
+.but1 {
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    width: 4rem;
+    padding: 4px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+.but2 {
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    width: 4rem;
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+h1 {
+    margin-left: 1rem;
+    margin-top: 5px;
+    color: rgb(245, 56, 87);
+}
+
+p {
+    margin-left: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    color: yellow;
+}
+
+.last-but {
+    text-align: center;
+    border-radius: 55px;
+    color: darkblue;
+    background-color: aquamarine;
+    height: 3rem;
+    width: 7rem;
+    border: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 33%;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+
+
+.last-but:hover {
+    background-color: lightgreen;
+    color: darkorange;
+    scale: 1.1;
+}
